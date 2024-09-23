@@ -4,6 +4,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+&sram1 {
+	zephyr,memory-attr = <DT_MEM_ARM_MPU_RAM_NOCACHE>;
+	zephyr,memory-region = "SRAM1";
+
+};
+
 /* Arduino Header pins: Tx:D9, Rx:D10 */
 dut: &uart9 {
 	pinctrl-0 = <&uart9_tx_pd15 &uart9_rx_pd14>;
