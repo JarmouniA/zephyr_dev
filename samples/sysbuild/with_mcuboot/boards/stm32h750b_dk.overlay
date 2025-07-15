@@ -1,0 +1,13 @@
+/*
+ * Copyright (c) 2025 Abderrahmane JARMOUNI
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/ {
+	chosen {
+		zephyr,flash = &mt25ql512ab1;
+		zephyr,flash-controller = &mt25ql512ab1;
+		zephyr,code-partition = &slot0_partition;
+	};
+};
